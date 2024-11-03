@@ -23,7 +23,8 @@ fig = go.Figure(data=go.Heatmap(
     z=df.values,
     x=df.columns,
     y=df.index,
-    colorscale='Viridis',
+    #colorscale='Viridis',
+    colorscale='Blues',  # 青系のカラースケールを設定
     colorbar=dict(title='値'),
     text=df.values,  # 各セルの値を表示
     texttemplate="%{text:.0f}",  # 整数表示
